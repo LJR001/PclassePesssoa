@@ -6,19 +6,21 @@ namespace PclassePesssoa
     {
         static void Main(string[] args)
         {
-           
+
             String[,] Cadastro = new String[3, 4];
 
             Console.WriteLine("******** Cadastrar de usuario *******\n");
-            
-            Cadastros();
+
+
+            InserirDados();
+
             Console.Clear();
 
             ImprimirDados();
 
-            
 
-            void Cadastros()
+
+            void InserirDados()
             {
                 for (int linhas = 0; linhas < 3; linhas++)
                 {
@@ -49,7 +51,7 @@ namespace PclassePesssoa
                                 //  Console.ReadKey();
                                 break;
 
-                        
+
                         }
 
                     }
@@ -61,16 +63,27 @@ namespace PclassePesssoa
 
             void ImprimirDados()
             {
-                Console.WriteLine("******** Cadastro dos usuarios *******\n");
-                for (int j = 0; j < 3; j++)
-                {
-                    Console.WriteLine();
-                    Pessoa pessoa = new Pessoa(Cadastro[j, 0], Cadastro[j, 1], Cadastro[j, 2], Cadastro[j,3]);
-                    Console.WriteLine(pessoa.ToString());
-                    Console.WriteLine();
-                }
+                 Console.WriteLine("******** Cadastro dos usuarios *******\n");
+                // for (int j = 0; j < 3; j++)
+                // {
+
+                Console.WriteLine();
+                Pessoa pessoa1 = new Pessoa(Cadastro[0, 0], Cadastro[0, 1], Cadastro[0, 2], Cadastro[0, 3]);
+                Console.WriteLine(pessoa1.ToString());
+                Console.WriteLine();
+
+                Console.WriteLine();
+                Pessoa pessoa2 = new Pessoa(Cadastro[1, 0], Cadastro[1, 1], Cadastro[1, 2], Cadastro[1, 3]);
+                Console.WriteLine(pessoa2.ToString());
+                Console.WriteLine();
+                Console.WriteLine();
+
+                Pessoa pessoa3 = new Pessoa(Cadastro[2, 0], Cadastro[2, 1], Cadastro[2, 2], Cadastro[2, 3]);
+                Console.WriteLine(pessoa3.ToString());
+                Console.WriteLine();
+                //}
             }
-            
+
 
         }
     }

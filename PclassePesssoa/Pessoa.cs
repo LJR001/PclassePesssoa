@@ -26,7 +26,7 @@ namespace PclassePesssoa
             return "Nome: " + nome + "\ndata de nascimento: " + data_nasc + "\ncpf: " + cpf + "\ntelefone " + telefone;
         }
 
-       
+       /*
         public String getNome()
         {
                return nome;
@@ -44,6 +44,6 @@ namespace PclassePesssoa
             return telefone;
         }
 
-
+        */
     }
 }
